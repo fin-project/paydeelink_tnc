@@ -1,6 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+/*<link rel="stylesheet" href="{{ url_for('static', filename='css/paydee-styles-1.1.css') }}">*/
+@font-face {
+    font-family: 'Avenir';
+    src: "{{ url_for('static', filename='fonts/AvenirNextLTPro-Regular.eot') }}";
+    src: "{{ url_for('static', filename='fonts/AvenirNextLTPro-Regular.eot?#iefix') }}"  format('embedded-opentype'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-Regular.woff2') }}" format('woff2'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-Regular.woff') }}" format('woff'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-Regular.ttf') }}" format('truetype'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') }}" format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'AvenirBold';
+    src: "{{ url_for('static', filename='fonts/AvenirNextLTPro-Bold.eot') }}";
+    src: "{{ url_for('static', filename='fonts/AvenirNextLTPro-Bold.eot?#iefix') }}" format('embedded-opentype'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-Bold.woff2') }}" format('woff2'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-Bold.woff') }}" format('woff'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-Bold.ttf') }}" format('truetype'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-Bold.svg#AvenirNextLTPro-Bold') }}" format('svg');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'AvenirItalic';
+    src: "{{ url_for('static', filename='fonts/AvenirNextLTPro-It.eot') }}";
+    src: "{{ url_for('fonts/AvenirNextLTPro-It.eot?#iefix') }}" format('embedded-opentype'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-It.woff2') }}" format('woff2'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-It.woff') }}" format('woff'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-It.ttf') }}" format('truetype'),
+      "{{ url_for('static', filename='fonts/AvenirNextLTPro-It.svg#AvenirNextLTPro-It') }}" format('svg');
+    font-weight: normal;
+    font-style: italic;
+  }
 
-.contentA .card {
-    border: None;
-    background-color: #1b1231;
-    color : #fff;
+  p{
+    font-family: 'Avenir', arial, sans-serif;
+    font-weight: 200;
+    font-style: normal;    
+  }
+
+  i{
+    font-family: 'AvenirItalic', arial, sans-serif;
+    font-weight: 100;
+    font-style: italic;   
+  }
+
+h6 {
+   font-family: 'AvenirBold', arial, sans-serif;
+   font-weight: 300;
+   font-style: normal;
 }
+
+h1 {
+    font-family: 'AvenirBold', arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+ }
